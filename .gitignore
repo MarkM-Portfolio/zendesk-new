@@ -1,0 +1,9 @@
+*.log
+.DS_Store
+.git
+.idea
+.terraform
+.venv
+.vscode
+__pycache__
+node_modules

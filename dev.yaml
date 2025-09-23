@@ -1,0 +1,30 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  dev:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: dev.amd64
+      Runtime: go1.x
+      PackageType: Zip
+      FunctionName: dev.amd64
+      Description: ''
+      MemorySize: 4196
+      Timeout: 43200
+      Policies: AWSLambdaExecute
+      Events:
+        root:
+          Type: Api
+          Properties:
+            Path: /provision-zendesk
+            Method: POST
+
+      Environment:
+        Variables:
+          TMC_DEBUG: true
+          TMC_WEBHOOK_USERNAME: cbdev
+          TMC_WEBHOOK_PASSWORD: CbD3v-123fred
+          TMC_ZD_DOMAIN: themessagingcompany
+          TMC_ZD_API_USER: bizsys@atmail.com
+          TMC_ZD_API_TOKEN: rZSp0LY0CI94FGQV15VxBjRlIJ0HfiT68dLNSZX4
+    

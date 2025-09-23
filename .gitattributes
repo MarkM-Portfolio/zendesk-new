@@ -1,0 +1,10 @@
+*.encrypted linguist-language=Encrypted linguist-vendored=false
+*.gitattributes linguist-language=Git linguist-vendored=false
+*.gitignore linguist-language=Git linguist-vendored=false
+*.go linguist-language=Golang linguist-vendored=false
+*.md linguist-language=Markdown linguist-vendored=false
+*.mod linguist-language=Mod linguist-vendored=false
+*.sh linguist-language=Bash linguist-vendored=false
+*.sum linguist-language=Sum linguist-vendored=false
+*.yml linguist-language=YAML linguist-vendored=false
+*.zip linguist-language=Zip linguist-vendored=false
